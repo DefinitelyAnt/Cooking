@@ -32,10 +32,11 @@ class Client(discord.Client):
                    "alcohol","cigarette","weed","drugs",
                    "cocaine","heroin","meth","fentanyl","mdma","ecstasy","lsd","acid","mushrooms","shrooms","ketamine","k-hole","xanax","xanny","lean","syrup",
                    "vape","vaping","vape","hookah","shisha","cigars","cigar","cigarette","cig","blunt","joint",
-                   "asshole","rape","whore","hoe","cb","kontol","babi","anjing","asu","babi","sial","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai","tai kucing","tai ayam","tai kambing","tai sapi",
+                   "asshole","rape","whore","hoe","cb","kontol","babi","anjing","asu","babi","sial","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai kucing","tai ayam","tai kambing","tai sapi",
                    "kys","yiff","porn","gay","sex"," bara","futa","hentai","loli","shota","yaoi","yuri","incest","pedo",
                    "furry","furries","fursuit","fursuits",
                    "tyranny","dictatorship","dictator","dictators","tyrant","tyrants",
+                   
                    ]
 
     SERVER_ADMIN_CHANNELS = {

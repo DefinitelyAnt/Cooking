@@ -34,7 +34,8 @@ class Client(discord.Client):
                    "vape","vaping","vape","hookah","shisha","cigars","cigar","cigarette","cig","blunt","joint",
                    "asshole","rape","whore","hoe","cb","kontol","babi","anjing","asu","babi","sial","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai","tai kucing","tai ayam","tai kambing","tai sapi",
                    "kys","yiff","porn","gay","sex"," bara","futa","hentai","loli","shota","yaoi","yuri","incest","pedo",
-                   "furry","furries","fursuit","fursuits"
+                   "furry","furries","fursuit","fursuits",
+                   "tyranny","dictatorship","dictator","dictators","tyrant","tyrants",
                    ]
 
     SERVER_ADMIN_CHANNELS = {

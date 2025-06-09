@@ -137,7 +137,7 @@ class Client(discord.Client):
 
             if self.user in message.mentions:
                 response = Request(message.content, self.template)
-            elif "I summon the word of r" in message.content.lower():
+            elif "i summon the word of r" in message.content.lower():
                 if any(role.name == "Cooking" for role in message.author.roles):
                     response = Cooking(self.template)
                 else:

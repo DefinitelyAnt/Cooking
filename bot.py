@@ -26,7 +26,15 @@ class Client(discord.Client):
     COOKING_ROLE = "Cooking"
     EMOJI = "✅"
     TRACKED_MESSAGE_ID = 1342135518338613272
-    WORD_FILTER = ["Project Sekai", "Fuck", "Rishan","Nigger","Nigga","onlyfans","cock","penis","dick","vagina","genshin","faggot","fellat","porn","rimjob"]
+    WORD_FILTER = ["Fuck", "Rishan","Nigger","Nigga",
+                   "onlyfans","cock","penis","dick","vagina",
+                   "faggot","fellat","porn","rimjob",
+                   "alcohol","cigarette","weed","drugs",
+                   "cocaine","heroin","meth","fentanyl","mdma","ecstasy","lsd","acid","mushrooms","shrooms","ketamine","k-hole","xanax","xanny","lean","syrup",
+                   "vape","vaping","vape","hookah","shisha","cigars","cigar","cigarette","cigs","blunt","joint",
+                   "asshole","rape","whore","hoe","cb","kontol","babi","anjing","asu","babi","sial","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai","tai kucing","tai ayam","tai kambing","tai sapi",
+                   "kys"
+                   ]
     def __init__(self, intents):
         super().__init__(intents=intents)
         self.tree = app_commands.CommandTree(self)

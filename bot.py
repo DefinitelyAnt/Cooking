@@ -66,31 +66,31 @@ class Client(discord.Client):
                     await message.add_reaction("🔥")
                 except Exception as e:
                     print(f"Couldn't add reaction: {e}")
-                return
-            ADMIN_CHANNEL_ID = 1359891372831670554
-            try:
-                await message.delete()
+            else:
+                ADMIN_CHANNEL_ID = 1359891372831670554
                 try:
-                    await message.author.send(
-                        f"⚠️ Your message in **#{message.channel}** was removed because it contained a restricted word. Please follow the dictatorship's rules."
-                    )
-                except discord.Forbidden:
-                    print(f"Could not DM user {message.author}.")
+                    await message.delete()
+                    try:
+                        await message.author.send(
+                            f"⚠️ Your message in **#{message.channel}** was removed because it contained a restricted word. Please follow the dictatorship's rules."
+                        )
+                    except discord.Forbidden:
+                        print(f"Could not DM user {message.author}.")
 
-                # Log the incident in the admin log channel
-                admin_channel = self.get_channel(ADMIN_CHANNEL_ID)
-                if admin_channel:
-                    embed = discord.Embed(
-                        title="🚫 Word Filter Triggered",
-                        description=f"**User:** {message.author} (`{message.author.id}`)\n"
-                                    f"**Channel:** <#{message.channel.id}>\n"
-                                    f"**Content:** `{message.content}`",
-                        color=discord.Color.red()
-                    )
-                    await admin_channel.send(embed=embed)
-            except Exception as e:
-                print(f"Error filtering message: {e}")
-            return 
+                    # Log the incident in the admin log channel
+                    admin_channel = self.get_channel(ADMIN_CHANNEL_ID)
+                    if admin_channel:
+                        embed = discord.Embed(
+                            title="🚫 Word Filter Triggered",
+                            description=f"**User:** {message.author} (`{message.author.id}`)\n"
+                                        f"**Channel:** <#{message.channel.id}>\n"
+                                        f"**Content:** `{message.content}`",
+                            color=discord.Color.red()
+                        )
+                        await admin_channel.send(embed=embed)
+                except Exception as e:
+                    print(f"Error filtering message: {e}")
+                return 
         try:
             if "!welcome" == message.content:
                 try:
@@ -127,7 +127,7 @@ class Client(discord.Client):
             if self.user in message.mentions:
                 response = Request(message.content, self.template)
             # If message is exactly "/cook", check for permission and call Cooking
-            elif "i summon the word of r" in message.content.lower():
+            elif "I summon the word of r" in message.content.lower():
                 if any(role.name == "Cooking" for role in message.author.roles):
                     response = Cooking(self.template)
                 else:

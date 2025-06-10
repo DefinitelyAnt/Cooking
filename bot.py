@@ -150,7 +150,6 @@ class Client(discord.Client):
                 await message.channel.send(response[i:i+2000])
         except Exception as e:
             print(f"Error: {e}")
-            await message.channel.send("An error occurred. Please try again.")
 
     async def on_raw_reaction_add(self, payload):
         if self.TRACKED_MESSAGE_ID and payload.message_id == self.TRACKED_MESSAGE_ID and str(payload.emoji) == self.EMOJI:

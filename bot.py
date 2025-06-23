@@ -27,13 +27,13 @@ class Client(discord.Client):
     TRACKED_MESSAGE_ID = 1342135518338613272
 
     WORD_FILTER = ["Fuck", "Rishan","Nigger","Nigga",
-                   "onlyfans","cock","penis","dick","vagina",
-                   "faggot","fellat","porn","rimjob",
+                   "onlyfans"," cock","penis","dick","vagina",
+                   "faggot"," fellat","porn","rimjob",
                    "alcohol","cigarette"," weed","drugs",
                    "cocaine","heroin","fentanyl","mdma","ecstasy","lsd","ketamine","k-hole","xanax","xanny",
                    "vape","vaping","vape","hookah","shisha","cigars","cigar"," cig",
-                   "asshole"," rape","whore"," cb","kontol","babi","anjing","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai kucing","tai ayam","tai kambing","tai sapi",
-                   "kys","yiff","porn","gay","sex"," bara","futa","hentai","shota","yaoi","yuri","incest","pedo",
+                   "asshole"," rape","whore"," cb","kontol"," babi","anjing","tolol","goblok","sampah","bangsat","bajingan","memek","jembut","tai kucing","tai ayam","tai kambing","tai sapi",
+                   "kys"," yiff","porn","gay"," sex"," bara","futa ","hentai","shota","yaoi","yuri","incest","pedo",
                    "furry","furries","fursuit","fursuits",
                    "tyranny","dictatorship","dictator","dictators","tyrant","tyrants",
                    
